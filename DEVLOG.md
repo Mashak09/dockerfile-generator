@@ -8,3 +8,4 @@
 - Hardware check: ollama ps reported a GPU split, but nvidia-smi, lspci and Ollama's own log all say CPU-only. I trust the log, so results are CPU-only on 2 vCPUs.
 - Called ollama's /api/generate endpoint using curl command, then wrapped it in a small python function (llm.py)
 - The first call is a bit slow because the model needs to load into the memory. A second call within about 5 minutes is faster.
+- Added three sample apps (python/flask, node/Express, Go) with different ports and dependency files, so that the generator detects the real facts and does not guess
