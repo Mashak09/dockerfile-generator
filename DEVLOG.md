@@ -9,3 +9,6 @@
 - Called ollama's /api/generate endpoint using curl command, then wrapped it in a small python function (llm.py)
 - The first call is a bit slow because the model needs to load into the memory. A second call within about 5 minutes is faster.
 - Added three sample apps (python/flask, node/Express, Go) with different ports and dependency files, so that the generator detects the real facts and does not guess
+- Wrote hand-made reference Dockerfiles for the Python, Node and Go sample apps (non-root user, cached dependency layer, multi-stage for Go)
+- Built and ran all three, and each answered on its port, so any later failure is the model's fault and not the app's
+- Image sizes (from docker images): fill in the three numbers here
