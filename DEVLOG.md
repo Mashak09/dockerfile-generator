@@ -12,3 +12,6 @@
 - Wrote hand-made reference Dockerfiles for the Python, Node and Go sample apps (non-root user, cached dependency layer, multi-stage for Go)
 - Built and ran all three, and each answered on its port, so any later failure is the model's fault and not the app's
 - Image sizes (from docker images): fill in the three numbers here
+- Set up VS Code Remote - SSH, so I edit files on the instance in a normal editor
+- Wrote context.py, which scans a project and reports language, version, entry point, port and traps like a missing npm lock file
+- Wrote gen_dockerfile.py (prompt v1, answer cleanup), but have not run it yet. That is the first job tomorrow
