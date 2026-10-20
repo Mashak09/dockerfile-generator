@@ -16,3 +16,5 @@
 - Wrote context.py, which scans a project and reports language, version, entry point, port and traps like a missing npm lock file
 - Wrote gen_dockerfile.py (prompt v1, answer cleanup), but have not run it yet. That is the first job tomorrow
 - First end-to-end run on the python sample app: the model's Dockerfile built on attempt 1 and mathced my reference very closely.
+- Ran the generated python dockerfile through hadolint(lint) and trivy (image vulnerabilities), plus simple grep checks for USER and latest tag
+- Lesson: hadolint reads the dockerfile and flags the bad practice in it and trivy insepects the docker image for vulnerablitites
