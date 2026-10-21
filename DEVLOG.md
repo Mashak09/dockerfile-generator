@@ -30,3 +30,6 @@
 ## Day 6 - 2026-10-21
 - Ran the generator on the Node sample app, which has no lock file on purpose. Attempt 1 failed because the model wrote COPY package.json package-lock.json
 - Finding: the prompt contained has_lockfile false, and the 3B model still ignored it
+- Ran the generator on the Go sample app: all 3 attempts failed with the same error (COPY go.mod go.sum, but the app has no go.sum). Total time 4m11s
+- Finding: the 3B model invents conventional files that are not there (a lock file for Node, go.sum for Go), and repeated the same mistake even after seeing the error
+- Next idea: prompt v2 with the rule "only copy files from the files list", measured against this baseline
