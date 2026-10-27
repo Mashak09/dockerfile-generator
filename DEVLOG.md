@@ -35,4 +35,4 @@
 - Next idea: prompt v2 with the rule "only copy files from the files list", measured against this baseline
 
 ## Day 7 - 2026-10-27
-- Checked my hand-written Go and Node Dockerfiles end to end: both build, run as containers and answer on their ports. So the failed model attempts (COPY package-lock.json, COPY go.mod go.sum) come from the model's Dockerfile and not from the apps
+- Checked my hand-written Go and Node Dockerfiles end to end: both build, run as containers and answer on their ports. So the failed model attempts (COPY package-lock.json, COPY go.mod go.sum) come from the model's Dockerfile and not from the apps.
